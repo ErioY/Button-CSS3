@@ -1,0 +1,60 @@
+<!--
+ * @Autor: ErioY
+ * @Date: 2019-08-10 22:04:40
+ * @Email: 1973545559@qq.com
+ * @Github: https://github.com/ErioY
+ * @LastEditors: ErioY
+ * @LastEditTime: 2019-08-10 22:25:38
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>几种按钮</title>
+    <style>
+    div{
+        width: 100px;
+        height: 50px;
+        float: left;
+        background-color: #4CAF50;
+        margin-right: 10px;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .button2{
+        background-color:#c88ee3;
+        opacity: 0.6;
+        cursor: not-allowed;
+    } 
+    .button3 {
+        background-color: #f44336;
+    }
+    .button1:hover{
+        box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button3:hover{
+        background-color: #910e05;
+    }
+    .button3:active{
+        box-shadow: 0 5px #c88ee3;
+        transform: translateY(4px);
+    }
+    </style>
+</head>
+<body>
+    <!-- 设计三个圆角按钮
+        第一个按钮：在鼠标悬停改变背景颜色同时显示阴影：通过伪元素hover来设置，使用 box-shadow 属性来为按钮添加阴影
+        第二个按钮：设置为禁用按钮：可以使用 opacity 属性为按钮添加透明度，同时可以添加 cursor 属性并设置为 "not-allowed" 来设置一个禁用的图片
+        第三个按钮：设置按钮动画，即鼠标移动到按钮上有按压效果
+    -->
+    <div class="button1">阴影按钮</div>
+    <div class="button2">禁用按钮</div>
+    <div class="button3">动画按钮</div>
+</body>
+</html>
